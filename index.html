@@ -820,9 +820,18 @@ body {
   <div class="section-title">Meet Ani</div>
   <p class="section-sub">Four agentic AI agents that run offline, speak local languages, and turn a farmer's voice into food system intelligence. No internet required. No literacy required. Just speak.</p>
 
-  <div class="ani-grid">
+  <div class="ani-grid" style="grid-template-columns:1fr 1fr;align-items:center">
+    <div style="display:flex;justify-content:center;align-items:center">
+      <div style="border-radius:24px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.15);max-width:280px;width:100%">
+        <video autoplay loop muted playsinline style="width:104%;height:auto;display:block;margin:-2% 0 -2% -3%">
+          <source src="ani.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div style="display:none">
+    <!-- Original phone mockups hidden, replaced by video above -->
     <div class="phone-mockups">
-      <!-- Phone 1: Home (high fidelity) -->
       <div style="width:220px;flex-shrink:0">
         <div style="background:#1B3A2D;border-radius:28px;padding:3px;box-shadow:0 20px 60px rgba(0,0,0,0.2),0 0 0 1px rgba(255,255,255,0.05)">
           <div style="background:#fff;border-radius:25px;overflow:hidden;height:460px;position:relative">
@@ -958,6 +967,7 @@ body {
         </div>
       </div>
     </div>
+    </div><!-- end hidden phone mockups -->
 
     <div class="ani-features">
       <div class="ani-feature">
@@ -1006,7 +1016,17 @@ body {
   <div class="section-title">Provincial food intelligence</div>
   <p class="section-sub">Real-time supply maps, community sentiment, IoT sensor data, and AI-generated policy recommendations in one dashboard.</p>
 
-  <div style="margin-top:48px;overflow-x:auto;-webkit-overflow-scrolling:touch"><div style="min-width:920px;max-width:960px">
+  <div style="margin-top:48px;max-width:1100px;margin-left:auto;margin-right:auto">
+    <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.12);border:1px solid var(--border)">
+      <video autoplay loop muted playsinline style="width:100%;height:auto;display:block">
+        <source src="lgu%20dashboard.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <div style="display:none">
+  <!-- Original dashboard mockup hidden, replaced by video above -->
+  <div style="margin-top:48px;overflow-x:auto;-webkit-overflow-scrolling:touch"><div style="min-width:960px;max-width:1100px">
     <!-- Browser chrome frame -->
     <div style="background:#F5F5F2;border-radius:16px 16px 0 0;padding:12px 16px;display:flex;align-items:center;gap:8px;border:1px solid var(--border);border-bottom:none">
       <div style="display:flex;gap:6px">
@@ -1016,98 +1036,279 @@ body {
       </div>
       <div style="flex:1;background:#fff;border-radius:6px;padding:5px 12px;font-size:11px;color:#888;border:1px solid #E8E6E0">dashboard.gffts.org/south-cotabato</div>
     </div>
-    <!-- Dashboard content (fully visible, no cutoff) -->
-    <div style="background:#fff;border:1px solid var(--border);border-top:none;border-radius:0 0 16px 16px;overflow:hidden;position:relative">
-      <!-- Dashboard header bar -->
-      <div style="background:#FAFAF8;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #E8E6E0">
-        <div style="display:flex;align-items:center;gap:10px">
-          <div style="width:28px;height:28px;border-radius:8px;background:#E6F1FB;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#0C447C">SC</div>
+    <!-- Dashboard content -->
+    <div style="background:#F1EFE8;border:1px solid var(--border);border-top:none;border-radius:0 0 16px 16px;overflow:hidden;position:relative">
+
+      <!-- Top nav bar -->
+      <div style="background:#F1EFE8;border-bottom:0.5px solid #D3D1C7;padding:0 16px;height:52px;display:flex;align-items:center;justify-content:space-between">
+        <!-- Left: GFFTS logo + product name -->
+        <div style="display:flex;align-items:center;gap:10px;flex-shrink:0">
+          <svg width="28" height="28" viewBox="0 0 79.72 81" style="flex-shrink:0">
+            <g fill="#34A853">
+              <path d="M57.33,31.12l-4.37-4.31c.51-.58,1.01-1.07,1.58-1.61l13.69-13.69c1.46,1.38,2.81,2.95,4.06,4.64l-14.96,14.96Z"/>
+              <path d="M22.45,31.11l-14.98-14.96c1.24-1.71,2.54-3.2,4.02-4.65l15.35,15.24-4.39,4.36Z"/>
+              <path d="M28.26,25.38l-11.52-11.47-3.79-3.8c1.49-1.4,3-2.61,4.66-3.72l14.85,14.79-4.2,4.2Z"/>
+              <path d="M51.53,25.41l-4.19-4.17,14.81-14.82c1.66,1.17,3.17,2.38,4.65,3.74l-15.27,15.26Z"/>
+              <path d="M52.85,54.35 L57.26,49.93 L71.24,63.87 L66.83,68.29 Z"/>
+              <path d="M8.56,63.92 L22.53,49.94 L26.90,54.32 L12.93,68.30 Z"/>
+              <path d="M21.11,32.47l-4.17,4.2L3.37,23.08c.82-1.87,1.8-3.54,2.91-5.31l1.48,1.36,13.36,13.34Z"/>
+              <polygon points="65.36 34.13 62.8 36.72 58.65 32.53 73.43 17.75 76.43 23.03 67.14 32.33 65.36 34.13"/>
+              <path d="M47.29,59.89 L51.53,55.65 L65.45,69.56 L61.21,73.80 Z"/>
+              <polygon points="18.82 73.44 14.31 69.64 28.29 55.68 32.45 59.83 18.82 73.44"/>
+              <path d="M72.35,62.23l-1.01-.96-12.72-12.68,4.16-4.17,12.81,12.75c-.98,1.75-2.01,3.36-3.24,5.07Z"/>
+              <path d="M7.5,62.27c-1.21-1.65-2.27-3.24-3.28-5.01l7.79-7.83,2.17-2.15,2.33-2.38c.12-.12.4-.34.54-.3s.33.26.47.4l3.65,3.61-13.67,13.67Z"/>
+              <circle cx="5.85" cy="40.77" r="5.85"/>
+              <circle cx="39.84" cy="75.15" r="5.85"/>
+              <circle cx="73.87" cy="40.77" r="5.85"/>
+              <circle cx="39.9" cy="5.85" r="5.85"/>
+              <path d="M39.9,20.28l-20.27,20.26,20.22,20.23,20.27-20.26-20.22-20.23ZM28.12,40.5l11.74-11.74,11.78,11.78-11.74,11.74-11.78-11.78Z"/>
+              <circle cx="39.94" cy="40.47" r="4.36"/>
+            </g>
+          </svg>
+          <div style="width:0.5px;height:28px;background:#D3D1C7"></div>
           <div>
-            <div style="font-size:14px;font-weight:600;color:#1E1E1E">South Cotabato food intelligence</div>
-            <div style="font-size:11px;color:#888">Provincial LGU dashboard</div>
+            <div style="display:flex;align-items:baseline;gap:5px">
+              <span style="font-size:14px;font-weight:600;color:#1E1E1E;letter-spacing:-0.2px">ANI</span>
+              <span style="font-size:11px;color:#888780;font-weight:400">by GFFTS</span>
+            </div>
+            <p style="margin:0;font-size:10px;color:#5F5E5A;line-height:1">South Cotabato · Agricultural Intelligence</p>
           </div>
         </div>
-        <div style="display:flex;align-items:center;gap:8px">
-          <span style="font-size:11px;color:#888">Last sync: 3 min ago</span>
-          <div style="width:8px;height:8px;border-radius:50%;background:#1D9E75;box-shadow:0 0 6px rgba(29,158,117,0.4)"></div>
+        <!-- Centre: community selector -->
+        <div style="display:flex;align-items:center;gap:6px">
+          <span style="font-size:10px;color:#888780">Viewing</span>
+          <div style="background:white;border:0.5px solid #D3D1C7;border-radius:6px;padding:5px 24px 5px 10px;font-size:12px;font-weight:500;color:#1E1E1E">All Communities</div>
         </div>
-      </div>
-
-      <!-- Stat cards -->
-      <div style="padding:20px 24px 0">
-        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px">
-          <div style="background:#F5F7F0;border-radius:10px;padding:14px"><div style="font-size:11px;color:#6B7B6E">Communities</div><div style="font-family:'DM Serif Display',serif;font-size:26px;color:#1E1E1E">23</div><div style="font-size:10px;color:#1D9E75;font-weight:600">+5 this month</div></div>
-          <div style="background:#F5F7F0;border-radius:10px;padding:14px"><div style="font-size:11px;color:#6B7B6E">Farmers</div><div style="font-family:'DM Serif Display',serif;font-size:26px;color:#1E1E1E">3,847</div><div style="font-size:10px;color:#1D9E75;font-weight:600">+312 this month</div></div>
-          <div style="background:#F5F7F0;border-radius:10px;padding:14px"><div style="font-size:11px;color:#6B7B6E">Reports (7d)</div><div style="font-family:'DM Serif Display',serif;font-size:26px;color:#1E1E1E">1,204</div><div style="font-size:10px;color:#888">avg 172/day</div></div>
-          <div style="background:#F5F7F0;border-radius:10px;padding:14px"><div style="font-size:11px;color:#6B7B6E">IoT sensors</div><div style="font-family:'DM Serif Display',serif;font-size:26px;color:#1E1E1E">84</div><div style="font-size:10px;color:#888">3 alerts active</div></div>
-          <div style="background:#FEF0F0;border-radius:10px;padding:14px"><div style="font-size:11px;color:#A32D2D">Unmet needs</div><div style="font-family:'DM Serif Display',serif;font-size:26px;color:#E24B4A">38</div><div style="font-size:10px;color:#A32D2D;font-weight:600">12 urgent</div></div>
-        </div>
-      </div>
-
-      <!-- Three column panels -->
-      <div style="padding:16px 24px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px">
-        <!-- Sentiment -->
-        <div style="border:1px solid #E8E6E0;border-radius:12px;padding:16px">
-          <div style="font-size:13px;font-weight:600;color:#1E1E1E;margin-bottom:12px">Community sentiment</div>
-          <div style="display:flex;gap:2px;margin-bottom:6px;height:44px;align-items:flex-end">
-            <div style="flex:1;display:flex;flex-direction:column;gap:1px;justify-content:flex-end"><div style="height:14px;background:#1D9E75;border-radius:2px 2px 0 0"></div><div style="height:16px;background:#EF9F27"></div><div style="height:8px;background:#E24B4A;border-radius:0 0 2px 2px"></div></div>
-            <div style="flex:1;display:flex;flex-direction:column;gap:1px;justify-content:flex-end"><div style="height:12px;background:#1D9E75;border-radius:2px 2px 0 0"></div><div style="height:16px;background:#EF9F27"></div><div style="height:12px;background:#E24B4A;border-radius:0 0 2px 2px"></div></div>
-            <div style="flex:1;display:flex;flex-direction:column;gap:1px;justify-content:flex-end"><div style="height:10px;background:#1D9E75;border-radius:2px 2px 0 0"></div><div style="height:14px;background:#EF9F27"></div><div style="height:18px;background:#E24B4A;border-radius:0 0 2px 2px"></div></div>
-            <div style="flex:1;display:flex;flex-direction:column;gap:1px;justify-content:flex-end"><div style="height:8px;background:#1D9E75;border-radius:2px 2px 0 0"></div><div style="height:14px;background:#EF9F27"></div><div style="height:22px;background:#E24B4A;border-radius:0 0 2px 2px"></div></div>
-            <div style="flex:1;display:flex;flex-direction:column;gap:1px;justify-content:flex-end"><div style="height:6px;background:#1D9E75;border-radius:2px 2px 0 0"></div><div style="height:16px;background:#EF9F27"></div><div style="height:26px;background:#E24B4A;border-radius:0 0 2px 2px"></div></div>
-            <div style="flex:1;display:flex;flex-direction:column;gap:1px;justify-content:flex-end;outline:1.5px solid #D85A30;border-radius:2px"><div style="height:5px;background:#1D9E75;border-radius:2px 2px 0 0"></div><div style="height:14px;background:#EF9F27"></div><div style="height:28px;background:#E24B4A;border-radius:0 0 2px 2px"></div></div>
+        <!-- Right: date + live -->
+        <div style="display:flex;align-items:center;gap:14px;flex-shrink:0">
+          <div style="text-align:right">
+            <p style="margin:0;font-size:11px;color:#1E1E1E;font-weight:500">Sat, Mar 28, 2026</p>
+            <p style="margin:0;font-size:10px;color:#888780">Updated 14:32</p>
           </div>
-          <div style="display:flex;justify-content:space-between;font-size:9px;color:#888;margin-bottom:8px"><span>Mar 19</span><span>Today</span></div>
-          <div style="background:#FEF0F0;border-radius:8px;padding:8px 10px;border:1px solid #F7C1C1">
-            <div style="font-size:10px;font-weight:700;color:#791F1F">Distress trending up</div>
-            <div style="font-size:10px;color:#A32D2D">Price-related: 67%</div>
-          </div>
-        </div>
-        <!-- Supply/demand -->
-        <div style="border:1px solid #E8E6E0;border-radius:12px;padding:16px">
-          <div style="font-size:13px;font-weight:600;color:#1E1E1E;margin-bottom:12px">Supply vs demand</div>
-          <div style="display:flex;flex-direction:column;gap:8px">
-            <div><div style="display:flex;justify-content:space-between;font-size:10px;margin-bottom:3px"><span style="color:#555">Kamote</span><span style="color:#1D9E75;font-weight:600">+22%</span></div><div style="height:7px;background:#F1EFE8;border-radius:4px"><div style="width:72%;height:100%;background:#1D9E75;border-radius:4px"></div></div></div>
-            <div><div style="display:flex;justify-content:space-between;font-size:10px;margin-bottom:3px"><span style="color:#555">Palay</span><span style="color:#888">Balanced</span></div><div style="height:7px;background:#F1EFE8;border-radius:4px"><div style="width:50%;height:100%;background:#85B7EB;border-radius:4px"></div></div></div>
-            <div><div style="display:flex;justify-content:space-between;font-size:10px;margin-bottom:3px"><span style="color:#555">Sitaw</span><span style="color:#E24B4A;font-weight:600">-41%</span></div><div style="height:7px;background:#F1EFE8;border-radius:4px"><div style="width:28%;height:100%;background:#E24B4A;border-radius:4px"></div></div></div>
-            <div><div style="display:flex;justify-content:space-between;font-size:10px;margin-bottom:3px"><span style="color:#555">Ampalaya</span><span style="color:#E24B4A;font-weight:600">-35%</span></div><div style="height:7px;background:#F1EFE8;border-radius:4px"><div style="width:32%;height:100%;background:#E24B4A;border-radius:4px"></div></div></div>
-            <div><div style="display:flex;justify-content:space-between;font-size:10px;margin-bottom:3px"><span style="color:#555">Saging</span><span style="color:#1D9E75;font-weight:600">+15%</span></div><div style="height:7px;background:#F1EFE8;border-radius:4px"><div style="width:65%;height:100%;background:#1D9E75;border-radius:4px"></div></div></div>
-          </div>
-        </div>
-        <!-- IoT / Drone -->
-        <div style="border:1px solid #E8E6E0;border-radius:12px;padding:16px">
-          <div style="font-size:13px;font-weight:600;color:#1E1E1E;margin-bottom:12px">IoT + drone intelligence</div>
-          <div style="display:flex;flex-direction:column;gap:8px">
-            <div style="background:#F5F5F2;border-radius:8px;padding:10px;display:flex;justify-content:space-between;align-items:center"><div><div style="font-size:11px;font-weight:600;color:#1E1E1E">Soil moisture – Tupi</div><div style="font-size:10px;color:#888">84 sensors, avg 34%</div></div><span style="font-size:9px;background:#FAEEDA;color:#633806;padding:3px 8px;border-radius:4px;font-weight:600">Dry</span></div>
-            <div style="background:#F5F5F2;border-radius:8px;padding:10px;display:flex;justify-content:space-between;align-items:center"><div><div style="font-size:11px;font-weight:600;color:#1E1E1E">Drone – Del Monte S4</div><div style="font-size:10px;color:#888">440 hectares, pineapple</div></div><span style="font-size:9px;background:#E1F5EE;color:#085041;padding:3px 8px;border-radius:4px;font-weight:600">Healthy</span></div>
-            <div style="background:#F5F5F2;border-radius:8px;padding:10px;display:flex;justify-content:space-between;align-items:center"><div><div style="font-size:11px;font-weight:600;color:#1E1E1E">Drone – Cooperative</div><div style="font-size:10px;color:#888">62 hectares, mixed</div></div><span style="font-size:9px;background:#FEF0F0;color:#791F1F;padding:3px 8px;border-radius:4px;font-weight:600">Pest risk</span></div>
+          <div style="width:0.5px;height:28px;background:#D3D1C7"></div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <div style="width:10px;height:10px;border-radius:50%;background:#1D9E75;box-shadow:0 0 0 4px rgba(29,158,117,0.2)"></div>
+            <span style="font-size:11px;color:#1D9E75;font-weight:500">Live</span>
           </div>
         </div>
       </div>
 
-      <!-- AI policy recommendation (fully visible) -->
-      <div style="padding:0 24px 20px">
-        <div style="border:1px solid #F7C1C1;border-radius:12px;padding:16px;background:#FFFAFA">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-            <div style="font-size:13px;font-weight:600;color:#1E1E1E">AI policy recommendation</div>
-            <span style="font-size:9px;background:#EEEDFE;color:#3C3489;padding:3px 10px;border-radius:6px;font-weight:600">Ani impact reporter</span>
+      <!-- Dashboard body -->
+      <div style="padding:12px 14px;display:flex;flex-direction:column;gap:10px">
+
+        <!-- Row 1: Metrics -->
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px">
+          <div style="background:white;border:0.5px solid #D3D1C7;border-radius:10px;padding:11px"><div style="font-size:10px;color:#888780;margin-bottom:3px">Communities</div><div style="font-size:22px;font-family:'DM Serif Display',serif;color:#1E1E1E;line-height:1.1">23</div><div style="font-size:9px;color:#1D9E75;font-weight:600;margin-top:2px">+5 this month</div></div>
+          <div style="background:white;border:0.5px solid #D3D1C7;border-radius:10px;padding:11px"><div style="font-size:10px;color:#888780;margin-bottom:3px">Farmers</div><div style="font-size:22px;font-family:'DM Serif Display',serif;color:#1E1E1E;line-height:1.1">3,847</div><div style="font-size:9px;color:#1D9E75;font-weight:600;margin-top:2px">+312 this month</div></div>
+          <div style="background:white;border:0.5px solid #D3D1C7;border-radius:10px;padding:11px"><div style="font-size:10px;color:#888780;margin-bottom:3px">Reports (7d)</div><div style="font-size:22px;font-family:'DM Serif Display',serif;color:#1E1E1E;line-height:1.1">1,204</div><div style="font-size:9px;color:#888780;margin-top:2px">avg 172/day</div></div>
+          <div style="background:white;border:0.5px solid #D3D1C7;border-radius:10px;padding:11px"><div style="font-size:10px;color:#888780;margin-bottom:3px">IoT sensors</div><div style="font-size:22px;font-family:'DM Serif Display',serif;color:#1E1E1E;line-height:1.1">84</div><div style="font-size:9px;color:#888780;margin-top:2px">3 alerts active</div></div>
+          <div style="background:white;border:0.5px solid #E24B4A;border-radius:10px;padding:11px"><div style="font-size:10px;color:#A32D2D;margin-bottom:3px">Unmet needs</div><div style="font-size:22px;font-family:'DM Serif Display',serif;color:#E24B4A;line-height:1.1">38</div><div style="font-size:9px;color:#A32D2D;font-weight:600;margin-top:2px">12 urgent</div></div>
+        </div>
+
+        <!-- Row 2: Intelligence panels -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+          <!-- Sentiment pulse -->
+          <div style="background:white;border:0.5px solid #D3D1C7;border-radius:10px;padding:11px">
+            <div style="font-size:12px;font-weight:500;color:#1E1E1E;margin-bottom:9px">Community sentiment</div>
+            <div style="display:flex;gap:2px;margin-bottom:5px;height:40px;align-items:flex-end">
+              <div style="flex:1;display:flex;flex-direction:column;gap:1px;justify-content:flex-end"><div style="height:13px;background:#1D9E75;border-radius:2px 2px 0 0"></div><div style="height:14px;background:#EF9F27"></div><div style="height:7px;background:#E24B4A;border-radius:0 0 2px 2px"></div></div>
+              <div style="flex:1;display:flex;flex-direction:column;gap:1px;justify-content:flex-end"><div style="height:11px;background:#1D9E75;border-radius:2px 2px 0 0"></div><div style="height:14px;background:#EF9F27"></div><div style="height:11px;background:#E24B4A;border-radius:0 0 2px 2px"></div></div>
+              <div style="flex:1;display:flex;flex-direction:column;gap:1px;justify-content:flex-end"><div style="height:9px;background:#1D9E75;border-radius:2px 2px 0 0"></div><div style="height:13px;background:#EF9F27"></div><div style="height:16px;background:#E24B4A;border-radius:0 0 2px 2px"></div></div>
+              <div style="flex:1;display:flex;flex-direction:column;gap:1px;justify-content:flex-end"><div style="height:7px;background:#1D9E75;border-radius:2px 2px 0 0"></div><div style="height:13px;background:#EF9F27"></div><div style="height:20px;background:#E24B4A;border-radius:0 0 2px 2px"></div></div>
+              <div style="flex:1;display:flex;flex-direction:column;gap:1px;justify-content:flex-end"><div style="height:5px;background:#1D9E75;border-radius:2px 2px 0 0"></div><div style="height:14px;background:#EF9F27"></div><div style="height:24px;background:#E24B4A;border-radius:0 0 2px 2px"></div></div>
+              <div style="flex:1;display:flex;flex-direction:column;gap:1px;justify-content:flex-end;outline:1.5px solid #D85A30;border-radius:2px"><div style="height:4px;background:#1D9E75;border-radius:2px 2px 0 0"></div><div style="height:12px;background:#EF9F27"></div><div style="height:26px;background:#E24B4A;border-radius:0 0 2px 2px"></div></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:8.5px;color:#888780;margin-bottom:7px"><span>Mar 22</span><span>Today</span></div>
+            <div style="background:#FEF0F0;border-radius:7px;padding:6px 8px;border:0.5px solid #F7C1C1"><div style="font-size:9.5px;font-weight:600;color:#791F1F">Distress trending up</div><div style="font-size:9px;color:#A32D2D">Price-related: 67%</div></div>
           </div>
-          <div style="font-size:12px;font-weight:600;color:#791F1F;margin-bottom:6px">Urgent: price distress escalating across 7 barangays</div>
-          <div style="font-size:11px;color:#555;line-height:1.6">Sentiment distress rising 40% week-over-week. Kamote oversupply depressing prices for 847 farmers. IoT soil moisture alerts in Tupi suggest 15-20% yield reduction next cycle. Recommended: activate DA price stabilization, deploy irrigation advisory, redirect surplus to processors at P88/kilo. Projected impact: P3.1M protected farmer income.</div>
-          <div style="display:flex;gap:8px;margin-top:12px">
-            <button style="background:#1D9E75;color:#fff;border:none;border-radius:8px;padding:8px 20px;font-size:12px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer">Approve and deploy</button>
-            <button style="background:transparent;border:1px solid #D4CDC2;border-radius:8px;padding:8px 16px;font-size:12px;color:#555;font-family:'DM Sans',sans-serif;cursor:pointer">Modify</button>
+          <!-- Supply gap -->
+          <div style="background:white;border:0.5px solid #D3D1C7;border-radius:10px;padding:11px">
+            <div style="font-size:12px;font-weight:500;color:#1E1E1E;margin-bottom:9px">Supply vs demand</div>
+            <div style="display:flex;flex-direction:column;gap:7px">
+              <div><div style="display:flex;justify-content:space-between;font-size:9px;margin-bottom:2px"><span style="color:#5F5E5A">Kamote</span><span style="color:#1D9E75;font-weight:600">+22%</span></div><div style="height:5px;background:#F1EFE8;border-radius:3px"><div style="width:72%;height:100%;background:#1D9E75;border-radius:3px"></div></div></div>
+              <div><div style="display:flex;justify-content:space-between;font-size:9px;margin-bottom:2px"><span style="color:#5F5E5A">Palay</span><span style="color:#888780">Balanced</span></div><div style="height:5px;background:#F1EFE8;border-radius:3px"><div style="width:50%;height:100%;background:#85B7EB;border-radius:3px"></div></div></div>
+              <div><div style="display:flex;justify-content:space-between;font-size:9px;margin-bottom:2px"><span style="color:#5F5E5A">Sitaw</span><span style="color:#E24B4A;font-weight:600">-41%</span></div><div style="height:5px;background:#F1EFE8;border-radius:3px"><div style="width:28%;height:100%;background:#E24B4A;border-radius:3px"></div></div></div>
+              <div><div style="display:flex;justify-content:space-between;font-size:9px;margin-bottom:2px"><span style="color:#5F5E5A">Ampalaya</span><span style="color:#E24B4A;font-weight:600">-35%</span></div><div style="height:5px;background:#F1EFE8;border-radius:3px"><div style="width:32%;height:100%;background:#E24B4A;border-radius:3px"></div></div></div>
+              <div><div style="display:flex;justify-content:space-between;font-size:9px;margin-bottom:2px"><span style="color:#5F5E5A">Saging</span><span style="color:#1D9E75;font-weight:600">+15%</span></div><div style="height:5px;background:#F1EFE8;border-radius:3px"><div style="width:65%;height:100%;background:#1D9E75;border-radius:3px"></div></div></div>
+            </div>
+          </div>
+          <!-- IoT panel -->
+          <div style="background:white;border:0.5px solid #D3D1C7;border-radius:10px;padding:11px">
+            <div style="font-size:12px;font-weight:500;color:#1E1E1E;margin-bottom:9px">IoT + drone intelligence</div>
+            <div style="display:flex;flex-direction:column;gap:7px">
+              <div style="background:#F1EFE8;border-radius:7px;padding:8px;display:flex;justify-content:space-between;align-items:center"><div><div style="font-size:10px;font-weight:500;color:#1E1E1E">Soil moisture – Tupi</div><div style="font-size:9px;color:#888780">84 sensors · avg 34%</div></div><span style="font-size:8.5px;background:#FAEEDA;color:#633806;padding:2px 7px;border-radius:4px;font-weight:600">Dry</span></div>
+              <div style="background:#F1EFE8;border-radius:7px;padding:8px;display:flex;justify-content:space-between;align-items:center"><div><div style="font-size:10px;font-weight:500;color:#1E1E1E">Drone – Del Monte S4</div><div style="font-size:9px;color:#888780">440 ha · pineapple</div></div><span style="font-size:8.5px;background:#E1F5EE;color:#085041;padding:2px 7px;border-radius:4px;font-weight:600">Healthy</span></div>
+              <div style="background:#F1EFE8;border-radius:7px;padding:8px;display:flex;justify-content:space-between;align-items:center"><div><div style="font-size:10px;font-weight:500;color:#1E1E1E">Drone – Cooperative</div><div style="font-size:9px;color:#888780">62 ha · mixed crops</div></div><span style="font-size:8.5px;background:#FEF0F0;color:#791F1F;padding:2px 7px;border-radius:4px;font-weight:600">Pest risk</span></div>
+            </div>
           </div>
         </div>
+
+        <!-- Row 3: Community map + Activity feed -->
+        <div style="display:grid;grid-template-columns:1fr 255px;gap:8px">
+          <!-- Community map -->
+          <div style="background:white;border:0.5px solid #D3D1C7;border-radius:10px;overflow:hidden">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:9px 13px;border-bottom:0.5px solid #D3D1C7">
+              <span style="font-size:12px;font-weight:500;color:#1E1E1E">Community activity map</span>
+              <div style="display:flex;background:#F1EFE8;border-radius:6px;padding:2px;gap:1px">
+                <div style="padding:3px 9px;background:white;border-radius:4px;font-size:8.5px;font-weight:500;color:#1E1E1E;box-shadow:0 1px 2px rgba(0,0,0,0.08)">Activity</div>
+                <div style="padding:3px 9px;font-size:8.5px;font-weight:500;color:#888780">Price stress</div>
+                <div style="padding:3px 9px;font-size:8.5px;font-weight:500;color:#888780">Heatmap</div>
+              </div>
+            </div>
+            <!-- SVG map -->
+            <div style="position:relative;height:280px;overflow:hidden">
+              <svg width="100%" height="100%" viewBox="0 0 720 280" preserveAspectRatio="xMidYMid slice" style="display:block">
+                <!-- Sea background -->
+                <rect width="720" height="280" fill="#D8E8F4"/>
+                <!-- Land mass – South Cotabato region -->
+                <path d="M55,270 L45,235 L48,195 L40,162 L55,132 L75,112 L100,92 L132,78 L165,68 L208,63 L255,58 L305,56 L360,59 L410,66 L452,78 L488,94 L518,112 L544,136 L562,162 L572,194 L568,228 L552,255 L522,270 L478,276 L405,280 L325,280 L245,278 L165,275 L100,272 Z" fill="#CCE0B8" stroke="#AECF98" stroke-width="1.5"/>
+                <!-- Interior terrain variations -->
+                <path d="M160,140 L220,120 L290,115 L370,118 L430,130 L480,150 L490,190 L460,220 L380,235 L280,232 L190,220 L150,190 Z" fill="#C2D9A8" opacity="0.5"/>
+                <!-- Lake Sebu -->
+                <ellipse cx="295" cy="178" rx="28" ry="20" fill="#A8C8E0" opacity="0.9"/>
+                <text x="295" y="182" text-anchor="middle" font-size="7" fill="#3A6A8C" font-family="DM Sans,sans-serif" font-weight="600">Lake Sebu</text>
+                <!-- Main road -->
+                <path d="M105,225 L185,188 L295,172 L395,176 L470,196" fill="none" stroke="#B8AE9C" stroke-width="2" stroke-dasharray="5,3"/>
+                <!-- Secondary roads -->
+                <path d="M295,58 L295,172" fill="none" stroke="#C0B89E" stroke-width="1" stroke-dasharray="3,2"/>
+                <path d="M395,66 L395,176" fill="none" stroke="#C0B89E" stroke-width="1" stroke-dasharray="3,2"/>
+                <!-- Community zone outlines -->
+                <circle cx="295" cy="173" r="44" fill="rgba(239,159,39,0.06)" stroke="#EF9F27" stroke-width="1.5" stroke-dasharray="5 3"/>
+                <circle cx="400" cy="176" r="38" fill="rgba(29,158,117,0.06)" stroke="#1D9E75" stroke-width="1.5" stroke-dasharray="5 3"/>
+                <circle cx="182" cy="188" r="36" fill="rgba(226,75,74,0.06)" stroke="#E24B4A" stroke-width="1.5" stroke-dasharray="5 3"/>
+                <circle cx="450" cy="130" r="30" fill="rgba(29,158,117,0.06)" stroke="#1D9E75" stroke-width="1.5" stroke-dasharray="5 3"/>
+                <!-- Community name labels -->
+                <text x="295" y="222" text-anchor="middle" font-size="9" fill="#3D3C38" font-family="DM Sans,sans-serif" font-weight="600">Lake Sebu</text>
+                <text x="400" y="218" text-anchor="middle" font-size="9" fill="#3D3C38" font-family="DM Sans,sans-serif" font-weight="600">Surallah</text>
+                <text x="182" y="228" text-anchor="middle" font-size="9" fill="#3D3C38" font-family="DM Sans,sans-serif" font-weight="600">T'boli</text>
+                <text x="450" y="165" text-anchor="middle" font-size="9" fill="#3D3C38" font-family="DM Sans,sans-serif" font-weight="600">Tupi</text>
+                <!-- Farmer dots: T'boli (distress) -->
+                <circle cx="162" cy="177" r="5.5" fill="#E24B4A" stroke="white" stroke-width="1.5"/>
+                <circle cx="178" cy="194" r="5.5" fill="#E24B4A" stroke="white" stroke-width="1.5"/>
+                <circle cx="197" cy="182" r="5.5" fill="#EF9F27" stroke="white" stroke-width="1.5"/>
+                <circle cx="168" cy="204" r="5.5" fill="#E24B4A" stroke="white" stroke-width="1.5"/>
+                <circle cx="192" cy="168" r="5.5" fill="#EF9F27" stroke="white" stroke-width="1.5"/>
+                <!-- Farmer dots: Lake Sebu (neutral) -->
+                <circle cx="268" cy="168" r="5.5" fill="#EF9F27" stroke="white" stroke-width="1.5"/>
+                <circle cx="280" cy="155" r="5.5" fill="#1D9E75" stroke="white" stroke-width="1.5"/>
+                <circle cx="308" cy="160" r="5.5" fill="#EF9F27" stroke="white" stroke-width="1.5"/>
+                <circle cx="272" cy="188" r="5.5" fill="#EF9F27" stroke="white" stroke-width="1.5"/>
+                <circle cx="316" cy="178" r="5.5" fill="#1D9E75" stroke="white" stroke-width="1.5"/>
+                <!-- Farmer dots: Surallah (positive) -->
+                <circle cx="374" cy="168" r="5.5" fill="#1D9E75" stroke="white" stroke-width="1.5"/>
+                <circle cx="390" cy="182" r="5.5" fill="#1D9E75" stroke="white" stroke-width="1.5"/>
+                <circle cx="410" cy="170" r="5.5" fill="#1D9E75" stroke="white" stroke-width="1.5"/>
+                <circle cx="396" cy="192" r="5.5" fill="#EF9F27" stroke="white" stroke-width="1.5"/>
+                <circle cx="380" cy="196" r="5.5" fill="#1D9E75" stroke="white" stroke-width="1.5"/>
+                <!-- Farmer dots: Tupi (positive) -->
+                <circle cx="432" cy="118" r="5.5" fill="#1D9E75" stroke="white" stroke-width="1.5"/>
+                <circle cx="448" cy="126" r="5.5" fill="#1D9E75" stroke="white" stroke-width="1.5"/>
+                <circle cx="462" cy="138" r="5.5" fill="#EF9F27" stroke="white" stroke-width="1.5"/>
+                <circle cx="436" cy="142" r="5.5" fill="#1D9E75" stroke="white" stroke-width="1.5"/>
+                <!-- Scattered farmers -->
+                <circle cx="348" cy="148" r="5.5" fill="#E24B4A" stroke="white" stroke-width="1.5"/>
+                <circle cx="330" cy="205" r="5.5" fill="#EF9F27" stroke="white" stroke-width="1.5"/>
+                <circle cx="474" cy="168" r="5.5" fill="#1D9E75" stroke="white" stroke-width="1.5"/>
+                <circle cx="242" cy="158" r="5.5" fill="#E24B4A" stroke="white" stroke-width="1.5"/>
+                <circle cx="210" cy="148" r="5.5" fill="#EF9F27" stroke="white" stroke-width="1.5"/>
+                <circle cx="495" cy="150" r="5.5" fill="#1D9E75" stroke="white" stroke-width="1.5"/>
+              </svg>
+              <!-- Legend -->
+              <div style="position:absolute;bottom:8px;left:8px;background:rgba(255,255,255,0.93);border:0.5px solid #D3D1C7;border-radius:7px;padding:6px 9px">
+                <div style="font-size:7.5px;font-weight:600;color:#5F5E5A;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px">Sentiment</div>
+                <div style="display:flex;flex-direction:column;gap:3px">
+                  <div style="display:flex;align-items:center;gap:4px"><div style="width:7px;height:7px;border-radius:50%;background:#E24B4A;flex-shrink:0"></div><span style="font-size:8px;color:#5F5E5A">Distress</span></div>
+                  <div style="display:flex;align-items:center;gap:4px"><div style="width:7px;height:7px;border-radius:50%;background:#EF9F27;flex-shrink:0"></div><span style="font-size:8px;color:#5F5E5A">Neutral</span></div>
+                  <div style="display:flex;align-items:center;gap:4px"><div style="width:7px;height:7px;border-radius:50%;background:#1D9E75;flex-shrink:0"></div><span style="font-size:8px;color:#5F5E5A">Positive</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Community strip -->
+            <div style="border-top:0.5px solid #D3D1C7;display:flex;overflow-x:auto;padding:7px 9px;gap:5px">
+              <div style="flex-shrink:0;background:#F1EFE8;border-radius:6px;padding:5px 7px;border-left:3px solid #EF9F27;min-width:90px"><p style="margin:0;font-size:9px;font-weight:600;color:#1E1E1E">Lake Sebu</p><p style="margin:0;font-size:8px;color:#888780">847 farmers · Kamote</p><p style="margin:2px 0 0;font-size:8px;color:#EF9F27;font-weight:500">Neutral</p></div>
+              <div style="flex-shrink:0;background:#F1EFE8;border-radius:6px;padding:5px 7px;border-left:3px solid #1D9E75;min-width:90px"><p style="margin:0;font-size:9px;font-weight:600;color:#1E1E1E">Surallah</p><p style="margin:0;font-size:8px;color:#888780">1,204 farmers · Mais</p><p style="margin:2px 0 0;font-size:8px;color:#1D9E75;font-weight:500">Positive</p></div>
+              <div style="flex-shrink:0;background:#F1EFE8;border-radius:6px;padding:5px 7px;border-left:3px solid #E24B4A;min-width:90px"><p style="margin:0;font-size:9px;font-weight:600;color:#1E1E1E">T'boli</p><p style="margin:0;font-size:8px;color:#888780">623 farmers · Palay</p><p style="margin:2px 0 0;font-size:8px;color:#E24B4A;font-weight:500">Distress</p></div>
+              <div style="flex-shrink:0;background:#F1EFE8;border-radius:6px;padding:5px 7px;border-left:3px solid #1D9E75;min-width:90px"><p style="margin:0;font-size:9px;font-weight:600;color:#1E1E1E">Tupi</p><p style="margin:0;font-size:8px;color:#888780">512 farmers · Pineapple</p><p style="margin:2px 0 0;font-size:8px;color:#1D9E75;font-weight:500">Positive</p></div>
+            </div>
+          </div>
+          <!-- Activity feed -->
+          <div style="background:white;border:0.5px solid #D3D1C7;border-radius:10px;overflow:hidden;display:flex;flex-direction:column">
+            <div style="padding:9px 13px;border-bottom:0.5px solid #D3D1C7;flex-shrink:0">
+              <span style="font-size:12px;font-weight:500;color:#1E1E1E">Live activity</span>
+            </div>
+            <div style="padding:7px;display:flex;flex-direction:column;gap:5px;overflow-y:auto">
+              <div style="background:#FEF0F0;border-left:3px solid #E24B4A;border-radius:0 6px 6px 0;padding:6px 8px"><div style="font-size:9px;font-weight:600;color:#791F1F">Distress · T'boli</div><div style="font-size:8.5px;color:#A32D2D;margin-top:1px">Price concern: Kamote ↓18%</div><div style="font-size:7.5px;color:#888780;margin-top:2px">2 min ago</div></div>
+              <div style="background:#E1F5EE;border-left:3px solid #1D9E75;border-radius:0 6px 6px 0;padding:6px 8px"><div style="font-size:9px;font-weight:600;color:#085041">Harvest · Surallah</div><div style="font-size:8.5px;color:#0F6E56;margin-top:1px">50 kg Mais @ ₱0.90/kilo</div><div style="font-size:7.5px;color:#888780;margin-top:2px">5 min ago</div></div>
+              <div style="background:#FEF8EC;border-left:3px solid #EF9F27;border-radius:0 6px 6px 0;padding:6px 8px"><div style="font-size:9px;font-weight:600;color:#633806">Report · Lake Sebu</div><div style="font-size:8.5px;color:#854F0B;margin-top:1px">80 kg Kamote @ ₱1.50/kilo</div><div style="font-size:7.5px;color:#888780;margin-top:2px">8 min ago</div></div>
+              <div style="background:#E1F5EE;border-left:3px solid #1D9E75;border-radius:0 6px 6px 0;padding:6px 8px"><div style="font-size:9px;font-weight:600;color:#085041">Harvest · Tupi</div><div style="font-size:8.5px;color:#0F6E56;margin-top:1px">200 kaban Palay @ ₱18/kaban</div><div style="font-size:7.5px;color:#888780;margin-top:2px">12 min ago</div></div>
+              <div style="background:#FEF0F0;border-left:3px solid #E24B4A;border-radius:0 6px 6px 0;padding:6px 8px"><div style="font-size:9px;font-weight:600;color:#791F1F">Need · T'boli</div><div style="font-size:8.5px;color:#A32D2D;margin-top:1px">Fertilizer subsidy request</div><div style="font-size:7.5px;color:#888780;margin-top:2px">18 min ago</div></div>
+              <div style="background:#E1F5EE;border-left:3px solid #1D9E75;border-radius:0 6px 6px 0;padding:6px 8px"><div style="font-size:9px;font-weight:600;color:#085041">Harvest · Surallah</div><div style="font-size:8.5px;color:#0F6E56;margin-top:1px">65 kg Kamote @ ₱1.70/kilo</div><div style="font-size:7.5px;color:#888780;margin-top:2px">24 min ago</div></div>
+              <div style="background:#FEF8EC;border-left:3px solid #EF9F27;border-radius:0 6px 6px 0;padding:6px 8px"><div style="font-size:9px;font-weight:600;color:#633806">Report · Lake Sebu</div><div style="font-size:8.5px;color:#854F0B;margin-top:1px">120 kg Kamote @ ₱1.60/kilo</div><div style="font-size:7.5px;color:#888780;margin-top:2px">31 min ago</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 4: AI policy recommendation -->
+        <div style="background:white;border:0.5px solid #F7C1C1;border-radius:10px;padding:13px">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+            <div style="font-size:12px;font-weight:500;color:#1E1E1E">AI policy recommendation</div>
+            <span style="font-size:8.5px;background:#EEEDFE;color:#3C3489;padding:3px 9px;border-radius:6px;font-weight:600">Ani impact reporter</span>
+          </div>
+          <div style="font-size:11px;font-weight:600;color:#791F1F;margin-bottom:5px">Urgent: price distress escalating across 7 barangays</div>
+          <div style="font-size:10.5px;color:#5F5E5A;line-height:1.65">Sentiment distress rising 40% week-over-week. Kamote oversupply depressing prices for 847 farmers. IoT soil moisture alerts in Tupi suggest 15–20% yield reduction next cycle. Recommended: activate DA price stabilization, deploy irrigation advisory, redirect surplus to processors at ₱88/kilo. Projected impact: ₱3.1M protected farmer income.</div>
+          <div style="display:flex;gap:8px;margin-top:10px">
+            <button style="background:#1D9E75;color:#fff;border:none;border-radius:8px;padding:7px 18px;font-size:11px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer">Approve and deploy</button>
+            <button style="background:transparent;border:0.5px solid #D3D1C7;border-radius:8px;padding:7px 14px;font-size:11px;color:#5F5E5A;font-family:'DM Sans',sans-serif;cursor:pointer">Modify</button>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Coming soon overlay (subtle, doesn't hide content) -->
+      <!-- Overlay -->
       <div style="background:linear-gradient(transparent 70%,rgba(27,58,45,0.85));padding:60px 0 24px;text-align:center;margin-top:-80px;position:relative;z-index:2">
         <div style="font-size:12px;font-weight:700;letter-spacing:2px;color:#F4B942;text-transform:uppercase">Beta Dashboard · 2026</div>
-        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px">Sentiment analysis + IoT + drone intelligence + AI policy engine</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px">Sentiment analysis · IoT · Drone intelligence · AI policy engine</div>
       </div>
     </div>
   </div></div>
+  </div><!-- end hidden dashboard mockup -->
+</section>
+
+<!-- BPO DASHBOARD -->
+<section style="padding:100px 5%;background:var(--cream)">
+  <div class="section-label">For partners</div>
+  <div class="section-title">RLHF annotation platform</div>
+  <p class="section-sub">Retrain BPO workers as AI trainers. Our annotation dashboard powers reinforcement learning from human feedback — turning the Philippines' service workforce into the backbone of responsible AI.</p>
+
+  <div style="margin-top:48px;max-width:1100px;margin-left:auto;margin-right:auto">
+    <div style="border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.12);border:1px solid var(--border)">
+      <video autoplay loop muted playsinline style="width:100%;height:auto;display:block">
+        <source src="bpo%20dashboard.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- ASSESSMENT ENGAGEMENT -->
+<section style="padding:100px 5%;background:var(--earth-light)">
+  <div class="section-label">Getting started</div>
+  <div class="section-title">Readiness assessment</div>
+  <p class="section-sub">Every community is different. Before deployment, we run a largely offline discovery engagement to assess the state of readiness — infrastructure, connectivity, language coverage, and existing data systems — so we can customize a solution that interfaces cleanly with our platform and data schema.</p>
+
+  <div style="margin-top:48px;max-width:1100px;margin-left:auto;margin-right:auto;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+    <div>
+      <div style="border-radius:16px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,0.1);border:1px solid var(--border)">
+        <img src="discovery%20portal%201.jpg" alt="Discovery portal — offline work" style="width:100%;height:auto;display:block">
+      </div>
+      <p style="font-size:14px;color:var(--muted);margin-top:14px;line-height:1.6;text-align:center">Offline work — self-guided exercises and assessments completed by the community at their own pace.</p>
+    </div>
+    <div>
+      <div style="border-radius:16px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,0.1);border:1px solid var(--border)">
+        <img src="discovery%20portal%202.jpg" alt="Discovery portal — live review" style="width:100%;height:auto;display:block">
+      </div>
+      <p style="font-size:14px;color:var(--muted);margin-top:14px;line-height:1.6;text-align:center">Live review — reviewing results together and previewing next week's materials and exercises.</p>
+    </div>
+  </div>
 </section>
 
 <!-- THE ECOSYSTEM WE'RE BUILDING TOGETHER -->
@@ -1244,12 +1445,43 @@ body {
   </div>
 </section>
 
+<!-- HOW IT WORKS -->
+<section style="padding:80px 5%;background:var(--forest)">
+  <div style="text-align:center;max-width:700px;margin:0 auto 48px">
+    <div class="section-label" style="color:var(--gold)">How it works</div>
+    <div class="section-title" style="color:var(--white)">From assessment to impact</div>
+    <p style="font-size:17px;color:rgba(255,255,255,0.6);line-height:1.7;margin-top:16px">Deploying Ani in your community starts with understanding where you are. Every engagement follows the same proven path.</p>
+  </div>
+  <div style="max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
+    <div style="text-align:center;padding:24px 16px">
+      <div style="font-family:'DM Serif Display',serif;font-size:36px;color:var(--gold);margin-bottom:12px">1</div>
+      <div style="font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px">Assess</div>
+      <p style="font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6">4-week offline readiness engagement. We evaluate infrastructure, connectivity, language needs, and existing data systems.</p>
+    </div>
+    <div style="text-align:center;padding:24px 16px">
+      <div style="font-family:'DM Serif Display',serif;font-size:36px;color:var(--gold);margin-bottom:12px">2</div>
+      <div style="font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px">Customize</div>
+      <p style="font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6">We configure Ani to your community — local languages, crop types, data schema integration, and LGU dashboard setup.</p>
+    </div>
+    <div style="text-align:center;padding:24px 16px">
+      <div style="font-family:'DM Serif Display',serif;font-size:36px;color:var(--gold);margin-bottom:12px">3</div>
+      <div style="font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px">Deploy</div>
+      <p style="font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6">Train community champions, distribute devices, and go live. Farmers start reporting harvests by voice on day one.</p>
+    </div>
+    <div style="text-align:center;padding:24px 16px">
+      <div style="font-family:'DM Serif Display',serif;font-size:36px;color:var(--gold);margin-bottom:12px">4</div>
+      <div style="font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px">Scale</div>
+      <p style="font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6">Real-time dashboards drive policy. AI recommendations improve outcomes. Expand to neighboring communities.</p>
+    </div>
+  </div>
+</section>
+
 <!-- MEMBERSHIP -->
 <section class="membership-section" id="membership">
   <div style="text-align:center;max-width:700px;margin:0 auto 60px">
     <div class="section-label">Connect with us</div>
     <div class="section-title">Your membership funds food sovereignty</div>
-    <p style="font-size:17px;color:var(--muted);line-height:1.7;margin-top:16px">Every membership directly supports Ani's deployment to indigenous and rural communities who will never be asked to pay. You get exclusive access to the world's first community-generated agricultural AI dataset, a global network of food systems practitioners, and the tools to replicate this model anywhere.</p>
+    <p style="font-size:17px;color:var(--muted);line-height:1.7;margin-top:16px">Every membership directly supports Ani's deployment to indigenous and rural communities who will never be asked to pay. Deploying Ani starts with a 4-week readiness assessment — included in Institutional and Corporate tiers — to customize the platform for your community's needs.</p>
   </div>
 
   <!-- Impact counter -->
@@ -1272,59 +1504,62 @@ body {
     <div class="member-card">
       <div class="member-tier">Community</div>
       <div class="member-price">Free <span>forever</span></div>
-      <p class="member-desc">For the farmers and indigenous communities Ani is built for. Inclusion is the mission – never a paywall.</p>
+      <p class="member-desc">For the farmers and indigenous communities Ani is built for. Inclusion is the mission — never a paywall.</p>
       <ul class="member-features">
-        <li>Full access to the Ani platform</li>
-        <li>Voice in forum governance decisions</li>
+        <li>Full access to the Ani mobile platform</li>
+        <li>Voice-first harvest reporting in local languages</li>
         <li>Community-to-community knowledge sharing</li>
-        <li>Open-source deployment playbook</li>
         <li>Direct line to report needs and feedback</li>
       </ul>
       <a href="https://www.linkedin.com/in/glorianne-m/" target="_blank" class="member-btn member-btn-outline">Connect on LinkedIn</a>
     </div>
 
-    <div class="member-card featured">
+    <div class="member-card">
       <div class="member-tier">Individual</div>
-      <div class="member-price">$25 <span>/year</span></div>
+      <div class="member-price">₱5,750 <span>/year</span></div>
+      <div style="font-size:11px;color:var(--muted);margin-top:-2px;margin-bottom:8px">~$100 USD</div>
       <p class="member-desc">For researchers, development practitioners, and government staff who want data and tools nobody else has.</p>
       <ul class="member-features">
-        <li>Access to Ani's agricultural AI dataset – the first community-generated food systems dataset from indigenous farmers</li>
+        <li>Access to Ani's agricultural AI dataset — the first community-generated food systems dataset from indigenous farmers</li>
         <li>Quarterly impact reports with raw data</li>
         <li>GFFTS member credential for your profile</li>
-        <li>Private Slack community of food systems + AI practitioners across 14 countries</li>
+        <li>Private community of food systems + AI practitioners</li>
         <li>Invitations to virtual roundtables with field teams</li>
-        <li>Your $25 sponsors one community member's participation</li>
+      </ul>
+      <a href="https://www.linkedin.com/in/glorianne-m/" target="_blank" class="member-btn member-btn-outline">Connect on LinkedIn</a>
+    </div>
+
+    <div class="member-card featured">
+      <div class="member-tier">Institutional</div>
+      <div class="member-price">₱57,500 <span>/year</span></div>
+      <div style="font-size:11px;color:var(--muted);margin-top:-2px;margin-bottom:8px">~$1,000 USD</div>
+      <p class="member-desc">For LGUs, NGOs, and universities ready to deploy Ani. Includes the 4-week readiness assessment engagement to customize the platform for your community.</p>
+      <ul class="member-features">
+        <li>4-week readiness assessment engagement — included in first year</li>
+        <li>Customized platform integration with your data schema</li>
+        <li>Complete deployment playbook (saves 6+ months)</li>
+        <li>Training curriculum for community champions</li>
+        <li>Technical architecture docs and model access</li>
+        <li>Dedicated onboarding with GFFTS team</li>
+        <li>LGU dashboard access for your province</li>
+        <li>Priority access to field advisors and replication support</li>
       </ul>
       <a href="https://www.linkedin.com/in/glorianne-m/" target="_blank" class="member-btn member-btn-primary">Connect on LinkedIn</a>
     </div>
 
     <div class="member-card">
-      <div class="member-tier">Institutional</div>
-      <div class="member-price">$250 <span>/year</span></div>
-      <p class="member-desc">For NGOs, universities, and governments who want to deploy Ani in their own communities without starting from zero.</p>
-      <ul class="member-features">
-        <li>Complete deployment playbook (saves 6+ months of development)</li>
-        <li>Training curriculum for community champions</li>
-        <li>Technical architecture docs and model weights</li>
-        <li>Dedicated onboarding call with GFFTS team</li>
-        <li>Community of practice with other deploying institutions</li>
-        <li>Your organization listed as a GFFTS institutional partner</li>
-        <li>Priority access to replication support and field advisors</li>
-      </ul>
-      <a href="https://www.linkedin.com/in/glorianne-m/" target="_blank" class="member-btn member-btn-outline">Connect on LinkedIn</a>
-    </div>
-
-    <div class="member-card">
       <div class="member-tier">Corporate partner</div>
-      <div class="member-price">$2,500 <span>/year</span></div>
-      <p class="member-desc">For agribusiness, BPO firms, and tech companies navigating the AI transition – and wanting to lead it responsibly.</p>
+      <div class="member-price">₱575,000 <span>/year</span></div>
+      <div style="font-size:11px;color:var(--muted);margin-top:-2px;margin-bottom:8px">~$10,000 USD</div>
+      <p class="member-desc">For agribusiness, BPO firms, and tech companies navigating the AI transition — and wanting to lead it responsibly.</p>
       <ul class="member-features">
-        <li>AI transition advisory: BPO-to-AgriAI workforce roadmap</li>
-        <li>Supply chain intelligence from Ani's real-time agricultural data</li>
-        <li>Logo on GFFTS materials and annual report</li>
+        <li>Everything in Institutional, plus:</li>
+        <li>RLHF workforce transition advisory and roadmap</li>
+        <li>Supply chain intelligence from real-time agricultural data</li>
         <li>Seat at the annual GFFTS summit</li>
         <li>Direct partnership pipeline with LGUs and cooperatives</li>
-        <li>ESG and impact reporting data for your sustainability commitments</li>
+        <li>ESG and impact reporting data for sustainability commitments</li>
+        <li>Logo on GFFTS materials and annual report</li>
         <li>Shape the future of agricultural AI as a founding corporate partner</li>
       </ul>
       <a href="https://www.linkedin.com/in/glorianne-m/" target="_blank" class="member-btn member-btn-outline">Connect on LinkedIn</a>
@@ -1333,8 +1568,8 @@ body {
 
   <!-- Bottom CTA -->
   <div style="text-align:center;margin-top:60px;padding:40px;background:var(--white);border-radius:16px;border:1px solid var(--border)">
-    <p style="font-family:'DM Serif Display',serif;font-size:24px;color:var(--charcoal);margin-bottom:8px">Not sure which tier? Start with Individual.</p>
-    <p style="font-size:15px;color:var(--muted);margin-bottom:24px;max-width:500px;margin-left:auto;margin-right:auto">$25/year is less than a meal out. It funds a farmer's access to AI tools, and you get data and community access that doesn't exist anywhere else.</p>
+    <p style="font-family:'DM Serif Display',serif;font-size:24px;color:var(--charcoal);margin-bottom:8px">Ready to deploy Ani in your community?</p>
+    <p style="font-size:15px;color:var(--muted);margin-bottom:24px;max-width:560px;margin-left:auto;margin-right:auto">Start with the Institutional tier. Your first year includes the 4-week readiness assessment — we'll evaluate your infrastructure, customize the platform to your data schema, and have you live in under 2 months.</p>
     <a href="https://www.linkedin.com/in/glorianne-m/" target="_blank" class="btn-primary" style="display:inline-block">Connect on LinkedIn</a>
   </div>
 </section>
@@ -1359,6 +1594,28 @@ body {
       <div style="border-left:3px solid var(--gold);padding-left:16px">
         <p style="font-family:'DM Serif Display',serif;font-size:18px;color:var(--charcoal);font-style:italic;line-height:1.5">"I did not grow up in a boardroom. I grew up in Mindanao. I know what it feels like to leave, and to want to give something real back."</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVISORY TEAM -->
+<section style="padding:80px 5%;background:var(--cream)">
+  <div style="text-align:center;max-width:700px;margin:0 auto 48px">
+    <div class="section-label">The team</div>
+    <div class="section-title">Advisory &amp; technology</div>
+  </div>
+  <div style="max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start">
+    <!-- Glorianne -->
+    <div style="text-align:center">
+      <div style="font-size:18px;font-weight:700;color:var(--charcoal);margin-bottom:4px">Glorianne Montefrio</div>
+      <div style="font-size:14px;color:var(--forest-mid);font-weight:500;margin-bottom:12px">Founder &amp; CEO</div>
+      <p style="font-size:14px;color:var(--muted);line-height:1.6">Impact architect and Mindanao native. Nearly two decades of international business and large-scale project management. Speaker at World Corporate Summit and COP28UAE.</p>
+    </div>
+    <!-- Paul -->
+    <div style="text-align:center">
+      <div style="font-size:18px;font-weight:700;color:var(--charcoal);margin-bottom:4px">Paul Lee</div>
+      <div style="font-size:14px;color:var(--forest-mid);font-weight:500;margin-bottom:12px">Technology Advisor (Volunteer)</div>
+      <p style="font-size:14px;color:var(--muted);line-height:1.6">20-year engineering leader. AWS Principal — builds IoT platforms, Agentic AI products, and design systems. Led $17M+ innovation projects across 7 countries. Volunteering to architect Ani's platform and AI infrastructure.</p>
     </div>
   </div>
 </section>
@@ -1406,6 +1663,7 @@ body {
   </div>
   <div class="footer-bottom">
     <span>&copy; 2026 GFFTS. All rights reserved.</span>
+    <span>GFFTS is a registered non-profit organization.</span>
     <span>Founded by Glorianne Montefrio</span>
   </div>
 </footer>
